@@ -25,5 +25,5 @@ done
 
 
 curlcookies="$(mktemp /tmp/curlcookies.XXXXXXXXXX)"
-cookiefire "$profile" > "$curlcookies"
+./cookiefire "$profile" > "$curlcookies"
 curl -b "$curlcookies" "${args[@]}" ;
